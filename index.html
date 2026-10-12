@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#123B4A">
+        <meta name="description" content="Discover student-friendly campus essentials, from backpacks and notebooks to gadgets and everyday accessories.">
+        <title>CampusKart | Essentials for Campus Life</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-[#F7F3EE] text-[#202923] antialiased [font-family:'DM_Sans',sans-serif]">
+        <header id="home" class="sticky top-0 z-50 border-b border-[#E7DDD0] bg-[#FFFDFB]/95 backdrop-blur">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+                <a href="#home" class="flex shrink-0 items-center gap-2 text-xl font-extrabold tracking-tight text-[#123B4A] sm:text-2xl [font-family:'Manrope',sans-serif]" aria-label="CampusKart home">
+                    <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#123B4A] text-white shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l1 12H4L5 8Z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9V6a3 3 0 0 1 6 0v3"/>
+                        </svg>
+                    </span>
+                    <span>
+                        Campus<span class="text-[#E7A948]">Kart</span>
+                    </span>
+                </a>
+                <div class="flex items-center gap-4 text-sm font-semibold sm:gap-7">
+                    <a href="#home" class="transition-colors hover:text-[#E7A948]">Home</a>
+                    <a href="#products" class="transition-colors hover:text-[#E7A948]">Shop</a>
+                    <a href="#about" class="hidden transition-colors hover:text-[#E7A948] sm:inline">About</a>
+                    <a href="#cart" class="inline-flex items-center gap-2 rounded-full bg-[#123B4A] px-3 py-2 text-white transition-colors hover:bg-[#E7A948] hover:text-[#123B4A] sm:px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-4 w-4" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 8H6"/>
+                            <circle cx="10" cy="20" r="1"/>
+                            <circle cx="18" cy="20" r="1"/>
+                        </svg>
+                        <span>
+                            Cart (<span id="cart-count" aria-live="polite">0</span>
+                            )
+                        
+                        </span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="mx-auto max-w-7xl px-4 pt-6 sm:px-6 sm:pt-8 lg:px-8">
+                <div class="relative isolate overflow-hidden rounded-[30px] bg-gradient-to-br from-[#123B4A] via-[#1B4F5E] to-[#214E45] px-6 py-10 text-center text-white shadow-[0_24px_60px_rgba(18,59,74,0.18)] sm:px-10 sm:py-14 md:flex md:min-h-[390px] md:items-center md:justify-between md:gap-8 md:px-12 md:text-left lg:px-16">
+                    <div class="pointer-events-none absolute -right-16 -top-20 -z-10 h-64 w-64 rounded-full bg-[#E7A948]/25 blur-3xl"></div>
+                    <div class="pointer-events-none absolute -bottom-24 left-1/3 -z-10 h-64 w-64 rounded-full bg-[#B7D8CE]/20 blur-3xl"></div>
+                    <div class="mx-auto max-w-xl md:mx-0 md:w-1/2">
+                        <p class="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#EDE8D8]">Back to campus</p>
+                        <h1 class="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl [font-family:'Manrope',sans-serif]">
+                            Your Campus Essentials, <span class="text-[#F5CE7B]">All in One Place.</span>
+                        </h1>
+                        <p class="mx-auto mt-5 max-w-lg text-sm leading-7 text-white/80 sm:text-base md:mx-0">Discover everyday essentials for college life, from backpacks and notebooks to bottles, gadgets, and accessories.</p>
+                        <div class="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:justify-center md:justify-start">
+                            <a href="#products" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#F5CE7B] px-6 py-3.5 text-sm font-bold text-[#123B4A] shadow-sm transition duration-200 hover:bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#123B4A]">
+                                Shop the Collection
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+                                </svg>
+                            </a>
+                            <span class="text-xs text-white/70">Student-friendly prices. Everyday essentials.</span>
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-9 w-full max-w-sm md:mt-0 md:w-[42%] md:max-w-md">
+                        <div class="relative rounded-[24px] border border-white/20 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85" alt="Students walking through campus with bags and books" class="h-56 w-full rounded-[18px] object-cover sm:h-64 md:h-72" fetchpriority="high">
+                            <div class="absolute -bottom-4 -left-3 rounded-2xl bg-white px-4 py-3 text-left text-[#202923] shadow-xl sm:-left-5">
+                                <p class="text-xs font-semibold text-[#69766D]">Campus picks</p>
+                                <p class="text-lg font-extrabold text-[#123B4A] [font-family:'Manrope',sans-serif]">Up to 40% off</p>
+                            </div>
+                            <div class="absolute -right-2 top-5 rounded-full bg-[#F5CE7B] px-3 py-2 text-xs font-bold text-[#123B4A] shadow-lg sm:-right-4">Made for students</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section aria-label="Shopping benefits" class="mx-auto grid max-w-7xl grid-cols-1 gap-3 px-4 py-8 sm:grid-cols-3 sm:px-6 sm:py-10 lg:px-8">
+                <article class="flex items-center gap-3 rounded-2xl border border-[#E7DDD0] bg-[#FFFDFB] p-4 shadow-sm sm:justify-center sm:p-5">
+                    <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EAF4F2] text-[#123B4A]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/>
+                            <circle cx="7" cy="19" r="2"/>
+                            <circle cx="18" cy="19" r="2"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="font-bold text-[#123B4A]">Free Delivery</h2>
+                        <p class="mt-1 text-sm text-[#69766D]">On eligible orders</p>
+                    </div>
+                </article>
+                <article class="flex items-center gap-3 rounded-2xl border border-[#E7DDD0] bg-[#FFFDFB] p-4 shadow-sm sm:justify-center sm:p-5">
+                    <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F9F1D7] text-[#C08A1A]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20 7v5h-5M4 17v-5h5"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.6 9A7 7 0 0 1 17.5 6L20 12M4 12l2.5 6A7 7 0 0 0 18.4 15"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="font-bold text-[#123B4A]">7-Day Returns</h2>
+                        <p class="mt-1 text-sm text-[#69766D]">Shop with confidence</p>
+                    </div>
+                </article>
+                <article class="flex items-center gap-3 rounded-2xl border border-[#E7DDD0] bg-[#FFFDFB] p-4 shadow-sm sm:justify-center sm:p-5">
+                    <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EAF5F1] text-[#246A5E]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h3"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="font-bold text-[#123B4A]">Cash on Delivery</h2>
+                        <p class="mt-1 text-sm text-[#69766D]">Pay when it arrives</p>
+                    </div>
+                </article>
+            </section>
+            <section id="products" class="mx-auto max-w-7xl scroll-mt-24 px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
+                <div class="mb-7 flex flex-col gap-3 sm:mb-9 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <p class="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#246A5E]">The campus edit</p>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-[#123B4A] sm:text-3xl lg:text-4xl [font-family:'Manrope',sans-serif]">Essentials for Every Student</h2>
+                        <p class="mt-3 max-w-2xl text-sm leading-6 text-[#69766D] sm:text-base">Smart picks for studying, travelling, and everyday campus life.</p>
+                    </div>
+                    <p class="text-sm font-semibold text-[#69766D]">8 student favourites</p>
+                </div>
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#E7DDD0] bg-[#FFFDFB] transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=700&q=80" alt="Modern campus backpack in a neutral tone" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <span class="absolute left-3 top-3 rounded-full bg-[#123B4A] px-3 py-1 text-xs font-bold text-white">Bestseller</span>
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#246A5E]">Bags</p>
+                            <h3 class="text-base font-bold text-[#202923]">Campus Backpack</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#123B4A]">₹799</span>
+                                <span class="text-sm text-[#89938B] line-through">₹1,299</span>
+                            </div>
+                            <button type="button" data-product="Campus Backpack" class="mt-4 w-full rounded-xl bg-[#123B4A] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#246A5E] focus:outline-none focus:ring-2 focus:ring-[#246A5E] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#E7DDD0] bg-[#FFFDFB] transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=700&q=80" alt="Notebook and stationery set for study sessions" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <span class="absolute left-3 top-3 rounded-full bg-[#F9F1D7] px-3 py-1 text-xs font-bold text-[#123B4A]">Study pick</span>
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#246A5E]">Stationery</p>
+                            <h3 class="text-base font-bold text-[#202923]">Premium Notebook Set</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#123B4A]">₹199</span>
+                                <span class="text-sm text-[#89938B] line-through">₹299</span>
+                            </div>
+                            <button type="button" data-product="Premium Notebook Set" class="mt-4 w-full rounded-xl bg-[#123B4A] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#246A5E] focus:outline-none focus:ring-2 focus:ring-[#246A5E] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#DDE7DF] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Reusable insulated water bottle" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#247A5A]">Lifestyle</p>
+                            <h3 class="text-base font-bold text-[#202923]">Insulated Water Bottle</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#163D32]">₹349</span>
+                                <span class="text-sm text-[#89938B] line-through">₹499</span>
+                            </div>
+                            <button type="button" data-product="Insulated Water Bottle" class="mt-4 w-full rounded-xl bg-[#163D32] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#247A5A] focus:outline-none focus:ring-2 focus:ring-[#247A5A] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#DDE7DF] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80" alt="Wireless earphones and charging case" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <span class="absolute left-3 top-3 rounded-full bg-[#163D32] px-3 py-1 text-xs font-bold text-white">Popular</span>
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#247A5A]">Tech</p>
+                            <h3 class="text-base font-bold text-[#202923]">Wireless Earphones</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#163D32]">₹599</span>
+                                <span class="text-sm text-[#89938B] line-through">₹999</span>
+                            </div>
+                            <button type="button" data-product="Wireless Earphones" class="mt-4 w-full rounded-xl bg-[#163D32] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#247A5A] focus:outline-none focus:ring-2 focus:ring-[#247A5A] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#DDE7DF] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=700&q=80" alt="Scientific calculator for college studies" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#247A5A]">Study tools</p>
+                            <h3 class="text-base font-bold text-[#202923]">Scientific Calculator</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#163D32]">₹499</span>
+                                <span class="text-sm text-[#89938B] line-through">₹699</span>
+                            </div>
+                            <button type="button" data-product="Scientific Calculator" class="mt-4 w-full rounded-xl bg-[#163D32] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#247A5A] focus:outline-none focus:ring-2 focus:ring-[#247A5A] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#DDE7DF] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=700&q=80" alt="Protective sleeve for carrying a laptop" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#247A5A]">Tech accessories</p>
+                            <h3 class="text-base font-bold text-[#202923]">Laptop Sleeve</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#163D32]">₹399</span>
+                                <span class="text-sm text-[#89938B] line-through">₹599</span>
+                            </div>
+                            <button type="button" data-product="Laptop Sleeve" class="mt-4 w-full rounded-xl bg-[#163D32] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#247A5A] focus:outline-none focus:ring-2 focus:ring-[#247A5A] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#DDE7DF] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="Organized student study desk with laptop and accessories" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#247A5A]">Desk essentials</p>
+                            <h3 class="text-base font-bold text-[#202923]">Study Desk Organizer</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#163D32]">₹249</span>
+                                <span class="text-sm text-[#89938B] line-through">₹399</span>
+                            </div>
+                            <button type="button" data-product="Study Desk Organizer" class="mt-4 w-full rounded-xl bg-[#163D32] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#247A5A] focus:outline-none focus:ring-2 focus:ring-[#247A5A] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#DDE7DF] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <div class="relative overflow-hidden bg-[#F0F7F2]">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80" alt="Pens, pencils, and stationery for college" class="h-52 w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                            <span class="absolute left-3 top-3 rounded-full bg-[#E3F2E7] px-3 py-1 text-xs font-bold text-[#163D32]">Great value</span>
+                        </div>
+                        <div class="flex flex-1 flex-col p-4">
+                            <p class="mb-1 text-xs font-semibold uppercase tracking-wide text-[#247A5A]">Stationery</p>
+                            <h3 class="text-base font-bold text-[#202923]">College Stationery Kit</h3>
+                            <div class="mt-3 flex items-center gap-2">
+                                <span class="text-lg font-extrabold text-[#163D32]">₹299</span>
+                                <span class="text-sm text-[#89938B] line-through">₹449</span>
+                            </div>
+                            <button type="button" data-product="College Stationery Kit" class="mt-4 w-full rounded-xl bg-[#163D32] px-4 py-3 text-sm font-bold text-white transition duration-200 hover:bg-[#247A5A] focus:outline-none focus:ring-2 focus:ring-[#247A5A] focus:ring-offset-2">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer id="about" class="bg-[#163D32] text-white">
+            <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 py-8 text-center sm:flex-row sm:px-6 sm:text-left lg:px-8">
+                <div>
+                    <a href="#home" class="text-xl font-extrabold tracking-tight [font-family:'Manrope',sans-serif]">
+                        Campus<span class="text-[#B9D8C2]">Kart</span>
+                    </a>
+                    <p class="mt-2 text-sm text-white/70">Made for campus life.</p>
+                </div>
+                <div class="flex items-center gap-6 text-sm font-medium text-white/80">
+                    <a href="#about" class="transition-colors hover:text-[#B9D8C2]">About</a>
+                    <a href="mailto:hello@campuskart.example" class="transition-colors hover:text-[#B9D8C2]">Contact</a>
+                    <a id="cart" href="#products" class="transition-colors hover:text-[#B9D8C2]">Cart</a>
+                </div>
+                <p class="text-xs text-white/60">© 2026 CampusKart. All rights reserved.</p>
+            </div>
+        </footer>
+        <div id="cart-message" class="fixed bottom-4 left-1/2 z-50 hidden -translate-x-1/2 rounded-xl bg-[#163D32] px-5 py-3 text-sm font-semibold text-white shadow-xl" role="status" aria-live="polite"></div>
+        <script>
+            const cartCount = document.getElementById("cart-count");
+            const cartMessage = document.getElementById("cart-message");
+            let itemCount = 0;
+
+            document.querySelectorAll("[data-product]").forEach( (button) => {
+                button.addEventListener("click", () => {
+                    itemCount += 1;
+                    cartCount.textContent = itemCount;
+                    cartMessage.textContent = `${button.dataset.product} added to cart`;
+                    cartMessage.classList.remove("hidden");
+                    window.clearTimeout(window.cartMessageTimer);
+                    window.cartMessageTimer = window.setTimeout( () => {
+                        cartMessage.classList.add("hidden");
+                    }
+                    , 2200);
+                }
+                );
+            }
+            );
+        </script>
+    </body>
+</html>
